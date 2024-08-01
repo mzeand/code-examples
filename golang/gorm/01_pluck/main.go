@@ -51,8 +51,8 @@ func main() {
 	// ERROR  sql: Scan error on column index 0, name "user_id": converting NULL to int is unsupported
 	var userIDs []int
 	result := db.Table("teams").
-		Joins("INNER JOIN managers ON managers.team_id = teams.id").
-		Pluck("managers.user_id", &userIDs)
+		Joins("LEFT JOIN managers ON managers.team_id = teams.id").
+		Pluck("IFNULL(managers.user_id, -1)", &userIDs)
 	if result.Error != nil {
 		log.Fatal(result.Error)
 	}
