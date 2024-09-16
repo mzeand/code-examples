@@ -1,0 +1,8 @@
+{
+  "FunctionName": "exampleLambda01",
+  "Handler": "index.handler",
+  "MemorySize": 128,
+  "Role": "arn:aws:iam::018066769731:role/example-lambda01-role",
+  "Runtime": "nodejs18.x",
+  "Timeout": 3
+}
