@@ -1,0 +1,33 @@
+{
+  "Architectures": [
+    "x86_64"
+  ],
+  "Description": "",
+  "Environment": {
+    "Variables": {
+      "AWS_NODEJS_CONNECTION_REUSE_ENABLED": "1",
+      "ENV": "example"
+    }
+  },
+  "EphemeralStorage": {
+    "Size": 512
+  },
+  "FunctionName": "mizueando-example",
+  "Handler": "index.main",
+  "MemorySize": 1024,
+  "Role": "arn:aws:iam::809036412434:role/LambrollStack-myfunctionServiceRole41691664-LH3VLP10W3BH",
+  "Runtime": "nodejs16.x",
+  "SnapStart": {
+    "ApplyOn": "None"
+  },
+  "Tags": {
+    "aws:cloudformation:logical-id": "myfunctionDF753486",
+    "aws:cloudformation:stack-id": "arn:aws:cloudformation:ap-northeast-1:809036412434:stack/LambrollStack/369bfbb0-c4aa-11ed-b4ab-0e3e91b8a611",
+    "aws:cloudformation:stack-name": "LambrollStack",
+    "Owner": "Mizue Ando"
+  },
+  "Timeout": 5,
+  "TracingConfig": {
+    "Mode": "PassThrough"
+  }
+}
